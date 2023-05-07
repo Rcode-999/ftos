@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(ellipse at top, #FFD53D,#FFEA00);
+  padding: 20px;
+}
+
+.header-logo img {
+  height: 60px;
+  border-radius: 50%;
+}
+.foodTruckheader{
+  font-size: 90px;
+  text-align: center;
+  
+}
+.header-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.header-nav li {
+  margin: 0 10px;
+
+}
+
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+.food-trucks {
+  max-width: 1300px;
+  margin: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.food-truck {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  background-color: white;
+  text-align: center;
+  box-shadow: -10px 10px 10px rgba(0,0,0,0.05);
+}
+
+.food-truck button {
+  width: 98%;
+  background: #FFD53D;
+  color: #000;
+  padding: 10px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.food-truck button:hover {
+  background-color: #fff;
+  color: #FFEA00;
+  outline: none;
+}
+
+.food-truck p {
+  font-weight: 500;
+  padding: 5px;
+}
+
+.food-truck h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.food-truck img {
+  width: 100%;
+  object-fit: cover;
+  padding: 5px;
+}
+
+/*----footer----*/
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px;
+}
+
+.footer p {
+  color: #8a8a8a;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+
+}
+
+.footer-col-1 {
+  flex-basis: 30%;
+}
+
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+
+}
+
+.nav-items {
+  display: block;
+  margin: 5px;
+  padding: 5px 0;
+}
+
+.nav-items li {
+  list-style: none;
+  border: 1px solid #8a8a8a;
+  box-sizing: border-box;
+  width: 50%;
+  background-color: #b5b5b5;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 2px 2px;
+
+}
+
+.nav-items li h2 {
+  text-align: justify;
+  font-size: 14px;
+}
+
+/*-----Food trucks item boxes------*/
+
+.row2 {
+  width: 90%;
+  height: 50%;
+  padding: 1em;
+  flex-basis: 25%;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.item-box {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(#fff, #fafafa);
+  color: black;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  margin: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  box-shadow: -10px 10px 10px rgba(0,0,0,0.05);
+  transform: translateY(50%);
+  translate: transform 0.3s;
+}
+.carousel__slide .item-box h2{
+  font-size: 23px;
+}
+.item-box button {
+  position: absolute;
+  width: 100%;
+  background-color: #FFEA00;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  height: 41px;
+  cursor: pointer;
+  outline: none;
+  bottom: 0;
+}
+
+
+.btn-add-to-cart {
+  bottom: 0;
+}
+
+.item-box button:hover {
+  background-color: #fafafa;
+  color: #FFEA00;
+  outline: none;
+}
+
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel__images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 60px;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: -40px;
+}
+
+.carousel__button--right {
+  right: -40px;
+}
+
+.carousel__button img {
+  width: 30px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.food-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: o auto;
+  flex: 1 1 25%; 
+  background: radial-gradient(#fafafa,alice-blue);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.carousel__slide h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  height: 10px;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8a8a8a;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 10%;
+}
+
+::-webkit-scrollbar-track:hover {
+  cursor: pointer;
+}
+
+.is-transparent {
+  background: transparent;
+}
+
+
+@media (max-width: 600px) {
+   
+  .food-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .item-box {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 250px;
+    transform: translateX(30%);
+  }
+}
+
+#logo{
+  animation: fill 0.5s ease forwards 3s;
+}
+
+#logo path:nth-child(2){
+ stroke-dasharray: 240.66004943847656;
+ stroke-dashoffset: 240.66004943847656;
+ animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(3){
+  stroke-dasharray: 271.107421875;
+  stroke-dashoffset: 271.107421875;
+  animation: line-anim 2s ease forwards 0.3s;
+ }
+ #logo path:nth-child(4){
+  stroke-dasharray: 271.107421875;
+  stroke-dashoffset: 271.107421875;
+  animation: line-anim 2s ease forwards 0.6s;
+ }
+ #logo path:nth-child(5){
+  stroke-dasharray: 350.8751220703125;
+  stroke-dashoffset: 350.8751220703125;
+  animation: line-anim 2s ease forwards 0.9s;
+ }
+ #logo path:nth-child(6){
+  stroke-dasharray: 210.41998291015625;
+  stroke-dashoffset: 210.41998291015625;
+  animation: line-anim 2s ease forwards 1.2s;
+ }
+ #logo path:nth-child(7){
+  stroke-dasharray: 153.7653045654297;
+  stroke-dashoffset: 153.7653045654297;
+  animation: line-anim 2s ease forwards 1.5s;
+ }
+ #logo path:nth-child(8){
+  stroke-dasharray: 263.85125732421875;
+  stroke-dashoffset: 263.85125732421875;
+  animation: line-anim 2s ease forwards 1.8s;
+ }
+ #logo path:nth-child(9){
+  stroke-dasharray: 249.3302764892578;
+  stroke-dashoffset: 249.3302764892578;
+  animation: line-anim 2s ease forwards 2.1s;
+ }
+ #logo path:nth-child(10){
+  stroke-dasharray: 292.4030456542969;
+  stroke-dashoffset: 292.4030456542969;
+  animation: line-anim 2s ease forwards 2.4s;
+ }
+ #logo path:nth-child(11){
+  stroke-dasharray: 261.7621154785156;
+  stroke-dashoffset: 261.7621154785156;
+  animation: line-anim 2s ease forwards 2.7s;
+ }
+
+@keyframes line-anim{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill{
+  from{
+    fill: transparent;
+  }
+  to{
+    fill: #FFEA00;
+  }
+}

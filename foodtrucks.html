@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Truck Ordering Service</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="script" href="script.javascript" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-logo">
+      <img src="img\logo.png">
+    </div>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="foodtrucks.html">Food Trucks</a></li>
+        <li><a href="login.html">Account</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="carousel">
+    <button class="carousel__button carousel__button--left is-hidden">
+      <img src="img/left.png" alt="">
+    </button>
+    <div class="carousel__track-container">
+
+      <ul class="carousel__track">
+
+        <li class="carousel__slide  current-slide" data-food-truck="WaffelBak">
+          <h2>WaffelBak food truck</h2>
+          <div class="food-container">
+            <div class="item-box">
+              <h2 class="item-name">Plain Belgian Waffle  </h2>
+              <h2 class="item-price">Price: R25.00</h2><button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Ice cream </h2><h2 class="item-price"> Price: R20.00</h2><button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Chicken Waffle Burger</h2><h2 class="item-price"> Price: R40.00</h2><button class="btn-add-to-cart">Add to
+                cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Beef Burger</h2><h2 class="item-price"> Price: R40.00</h2><button class="btn-add-to-cart">Add to
+                cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle Chip Roll</h2><h2 class="item-price"> Price: R30.00</h2><button class="btn-add-to-cart">Add to
+                cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle Chip Roll With chicken strips</h2><h2 class="item-price"> Price: R45.00</h2><button
+                class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle Chip Roll With russian</h2><h2 class="item-price"> Price: R40.00</h2><button
+                class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle Chip Roll With russian + chicken strips</h2><h2 class="item-price"> Price: R55.00</h2><button
+                class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Chicken strips + chips</h2><h2 class="item-price"> Price: R35.00</h2><button class="btn-add-to-cart">Add to
+                cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle + Ice cream + Nutella</h2><h2 class="item-price">Price: R45.00</h2><button class="btn-add-to-cart">Add
+                to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle + Marshmello + Nutella</h2><h2 class="item-price">Price: R35.00</h2><button class="btn-add-to-cart">Add
+                to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle + Nutella, Fresh Banana & Whipped Cream</h2><h2 class="item-price"> Price: R40.00</h2><button
+                class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle + Homemade Toffee sauce, Fresh Banana & Whipped Cream<h2 class="item-price">Price: R40.00</h2></h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle + Nutella & Whipped Cream</h2><h2 class="item-price">Price: R35.00</h2><button
+                class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle + Homemade toffe sauce & Whipped Cream</h2><h2 class="item-price">Price: R40.00</h2><button
+                class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Waffle + Peanut Butter & Homemade Toffe Sauce</h2><h2 class="item-price">Price: R40.00</h2><button
+                class="btn-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="carousel__slide" data-food-truck="Chubby">
+          <h2>Chubby's food truck</h2>
+          <div class="food-container">                        
+            <div class="item-box">
+              <h2 class="item-name">Chicken Burger & Fries</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Chicken Cheese Burger & Fries</h2>
+              <h2 class="item-price">Price: R45.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Chicken Jalapeno Burger</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Chicken Jalapeno Burger & Fries</h2>
+              <h2 class="item-price">Price: R45.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Chicken Wrap</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Chicken Wrap + Cheese</h2>
+              <h2 class="item-price">Price: R45.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Chicken Wrap + Jalapeno</h2>
+              <h2 class="item-price">Price: R45.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Chicken Strips & Fries</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Wings & Fries</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Pizza</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="carousel__slide" data-food-truck="Sinqubdbile Mobile">
+          <h2>Sinqubdbile Mobile food truck</h2>
+          <div class="food-container">
+            <div class="item-box">
+              <h2 class="item-name">Boerewors Roll</h2>
+              <h2 class="item-price">Price: R35.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Hot dog</h2>
+              <h2 class="item-price">Price: R20.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Chip Roll</h2>
+              <h2 class="item-price">Price: R25.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Chip quarter</h2>
+              <h2 class="item-price">Price: R28.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Chip quarter + Russian</h2>
+              <h2 class="item-price">Price: R38.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Small chips</h2>
+              <h2 class="item-price">Price: R25.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Medium chips</h2>
+              <h2 class="item-price">Price: R35.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Large chips</h2>
+              <h2 class="item-price">Price: R45.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Chips and Russian</h2>
+              <h2 class="item-price">Price: R35.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Fat cake + Chips</h2>
+              <h2 class="item-price">Price: R22.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Fat cake + Chips + Russian</h2>
+              <h2 class="item-price">Price: R32.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Fat cake + Beef stew</h2>
+              <h2 class="item-price">Price: R25.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Fat cake + Beef stew</h2>
+              <h2 class="item-price">Price: R25.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Fat cake + Beef liver</h2>
+              <h2 class="item-price">Price: R25.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Fat cake + Russian</h2>
+              <h2 class="item-price">Price: R22.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Fat cake + Mince</h2>
+              <h2 class="item-price">Price: R22.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Fat cake + Beef burger</h2>
+              <h2 class="item-price">Price: R25.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Fat cake + Chips + Burger</h2>
+              <h2 class="item-price">Price: R35.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Plain fat cake</h2>
+              <h2 class="item-price">Price: R10.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Beef bunny chow</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Dumplings + Beef stew</h2>
+              <h2 class="item-price">Price: R50.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Dumplings + Beef liver</h2>
+              <h2 class="item-price">Price: R50.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Dumplings + Chicken stew</h2>
+              <h2 class="item-price">Price: R50.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Samp & beans + Beef stew</h2>
+              <h2 class="item-price">Price: R50.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Samp & beans + Chicken stew</h2>
+              <h2 class="item-price">Price: R50.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Rice & Chicken stew</h2>
+              <h2 class="item-price">Price: R50.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Rice & Beef stew</h2>
+              <h2 class="item-price">Price: R50.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Beef stew only</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Plain dumpling</h2>
+              <h2 class="item-price">Price: R12.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Quarter bread with Liver</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Coke</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Sprite</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Fanta</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Score</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Powerade</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Energade</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Flavored water</h2>
+              <h2 class="item-price">Price: R13.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Still water</h2>
+              <h2 class="item-price">Price: R12.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="carousel__slide" data-food-truck="Duke">
+          <h2>Duke's food truck</h2>
+          <div class="food-container">
+            <div class="item-box">
+              <h2 class="item-name">Cheese & Tomato Sandwich</h2>
+              <h2 class="item-price">Price: R20.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Bacon Egg & Cheese Sandwich</h2>
+              <h2 class="item-price">Price: R25.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Ham & Cheese Sandwich</h2>
+              <h2 class="item-price">Price: R20.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Duke's Dagwood</h2>
+              <h2 class="item-price">Price: R45.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Chicken Dagwood</h2>
+              <h2 class="item-price">Price: R45.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Russian Dagwood</h2>
+              <h2 class="item-price">Price: R45.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Cheesy Russian Dog</h2>
+              <h2 class="item-price">Price: R40.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Russian & Chips</h2>
+              <h2 class="item-price">Price: R30.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Russian & Chip Roll</h2>
+              <h2 class="item-price">Price: R35.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Small Chips</h2>
+              <h2 class="item-price">Price: R25.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Large Chips</h2>
+              <h2 class="item-price">Price: R35.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Hotdog & Roll</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            <div class="item-box">
+              <h2 class="item-name">Hotdog & Chips</h2>
+              <h2 class="item-price">Price: R30.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Chicken Cheese Burger</h2>
+              <h2 class="item-price">Price: R35.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Chicken Burger & Chips</h2>
+              <h2 class="item-price">Price: R35.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Still Water</h2>
+              <h2 class="item-price">Price: R10.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Flavoured Water</h2>
+              <h2 class="item-price">Price: R12.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Coke</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Fanta</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Sprite</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+            
+            <div class="item-box">
+              <h2 class="item-name">Score</h2>
+              <h2 class="item-price">Price: R15.00</h2>
+              <button class="btn-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="carousel__slide" data-food-truck="Queen D">
+          <h2>Queen Dijoo's food truck</h2>
+          <div class="food-container">
+          <div class="item-box">
+            <h2 class="item-name">Budget Chip Kota</h2>
+            <h2 class="item-price">Price: R23.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Budget Polony Kota</h2>
+            <h2 class="item-price">Price: R25.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Burger Kota XL</h2>
+            <h2 class="item-price">Price: R32.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Burger Kota XXL</h2>
+            <h2 class="item-price">Price: R40.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Burger Stacker XXXL</h2>
+            <h2 class="item-price">Price: R60.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Crumb Chic Kota XL</h2>
+            <h2 class="item-price">Price: R32.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Crumb Chic Kota XXL</h2>
+            <h2 class="item-price">Price: R40.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Crumb Chic Kota Stacker XXXL</h2>
+            <h2 class="item-price">Price: R60.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Russian Kota XL</h2>
+            <h2 class="item-price">Price: R32.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Russian Kota XXL</h2>
+            <h2 class="item-price">Price: R40.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Russian Kota Stacker XXXL</h2>
+            <h2 class="item-price">Price: R60.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Rib Kota XL</h2>
+            <h2 class="item-price">Price: R36.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          <div class="item-box">
+            <h2 class="item-name">Rib Kota XXL</h2>
+            <h2 class="item-price">Price: R42.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Rib Kota Stacker XXXL</h2>
+            <h2 class="item-price">Price: R62.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Chicken Kota W/Bacon</h2>
+            <h2 class="item-price">Price: R40.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Beef Kota W/Bacon</h2>
+            <h2 class="item-price">Price: R40.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Rib Kota W/Bacon</h2>
+            <h2 class="item-price">Price: R40.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Hot Chips Medium</h2>
+            <h2 class="item-price">Price: R15.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Hot Chips Large</h2>
+            <h2 class="item-price">Price: R25.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+          
+          <div class="item-box">
+            <h2 class="item-name">Bacon bits & Chips</h2>
+            <h2 class="item-price">Price: R35.00</h2>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        </li>
+      </ul>
+    </div>
+    <button class="carousel__button carousel__button--right">
+      <img src="img/right.png">
+    </button>
+  </div>
+  <script src="carousel.js">
+  </script>
+</body>
+
+</html>
