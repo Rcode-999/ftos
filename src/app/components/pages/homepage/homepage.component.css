@@ -1,0 +1,90 @@
+.welcome{
+    position: relative;
+    width: 100%;
+}
+
+.welcomeImage{
+    box-shadow: 10px 10px 10px white;
+    border-radius: 1rem;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+    height: 30rem;
+    width: 100%;
+    opacity: 0.1; 
+    
+}
+
+.welcomeMessage{
+    height: 20rem;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8rem;
+    position: absolute;
+    font-size: 3rem;
+    margin: 1px;
+    border-radius: 0.3rem;
+    box-shadow: 1px 10px 10px white;
+}
+
+h1{
+    text-align: center;
+    color: #ee7600;
+}
+
+.container{
+    padding: 0.2rem;
+    margin: 0 0.1rem 0.1rem 0;
+    background-color: white;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.foodtruck{
+    padding: 1rem;
+    margin: 1rem;
+    border: #ee7600 solid 1px;
+    border-radius: 1rem;
+    height: 300px;
+    width: 300px;
+    flex:  1 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.foodtruck span{
+    align-self: center;
+}
+.foodtruck img{
+    object-fit: cover;
+    height: 15rem;
+    width: 20rem;
+}
+.foodtruck button{
+    outline: none;
+    border: none;
+    color: antiquewhite;
+    background: #ee7600;
+    border-radius: 3rem;
+    height: 2.1rem;
+    width: 16rem;
+    opacity: 0.9;
+}
+
+.foodtruck button:hover{
+    cursor: pointer;
+    opacity: 1;
+}

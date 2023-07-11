@@ -1,0 +1,11 @@
+
+<h1>Testimonials</h1>
+<ul>
+    <li *ngFor="let person of persons">
+        <div class="testimonial">
+            <h2>{{person.name}}</h2>
+            <img src="{{person.imageUrl}}" alt="">
+            <span>{{person.comment}}</span>
+       </div>
+    </li>
+</ul>

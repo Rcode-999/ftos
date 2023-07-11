@@ -1,0 +1,14 @@
+<div class="container">
+    <img [src]="product.imageUrl" [alt]="product.name">
+    <div class="details">
+        <span class="name">{{product.name}}</span>
+        <div class="tags">
+            <a *ngFor="let tag of product.tag" routerLink="/tag/{{tag}}">
+                {{tag}}
+            </a>
+        </div>
+        <span class="price">{{product.price | currency:'R'}}</span>
+        <button (click)="addToCart()">Add to cart</button>
+    </div>
+    
+</div>

@@ -1,0 +1,10 @@
+
+<ul>
+    <li *ngFor="let product of Products">
+        <a routerLink="/foodtrucks/food/{{product.id}}" (click)="SetFoodTruck()">
+            <img [src]="product.imageUrl" [alt]="product.name">
+            <h1>{{product.name}}</h1>
+            <span>{{product.price | currency}}</span>
+        </a>
+    </li>
+</ul>

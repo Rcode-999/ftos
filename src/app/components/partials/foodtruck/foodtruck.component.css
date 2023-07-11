@@ -1,0 +1,41 @@
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5.7rem;
+    gap: 1rem;
+    width: 30rem;
+}
+
+li{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 2px 2px 3px black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+img{
+    height: 9rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #ee7600;
+}
+
+h1{
+    font-size: 1.3rem;
+}

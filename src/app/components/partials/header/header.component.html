@@ -1,0 +1,18 @@
+
+  <header>
+    <div class="header-logo">
+      <img src="assets/logo.png">
+    </div>
+    <nav class="header-nav">
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/foodtrucks">Food Trucks</a></li>
+        <li><a routerLink="/account">Account</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/cart"><i class='bx bx-shopping-bag'><span *ngIf="cartQuantity">({{cartQuantity}})</span></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  

@@ -1,0 +1,33 @@
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<app-search></app-search>
+<app-tags></app-tags>
+
+<div  class="carousel-container">
+    <ul>
+        <li *ngFor="let foodTruck of foodTrucks; let i = index" 
+        [ngClass]="{'image-active': selectedIndex === i}"
+        class="fade"
+        >
+            <h1>{{foodTruck.title}}</h1>
+            <app-not-found
+[visible]="!foodTrucks || !foodTrucks.length"
+resetLinkText="Reset Search"
+></app-not-found>
+            <app-foodtruck [foodTruckTitle]="foodTruck.title"></app-foodtruck>
+        </li>
+    </ul>
+
+    <button *ngIf="controls" class="btn-carousel btn-prev">
+        <i class="fas fa-arrow-circle-left icon-carousel icon-prev"
+        (click)="onPrevClick()">
+
+        </i>
+    </button>
+    
+    <button *ngIf="controls" class="btn-carousel btn-next">
+        <i class="fas fa-arrow-circle-right icon-carousel icon-next"
+        (click)="onNextClick()">
+
+        </i>
+    </button>
+</div>

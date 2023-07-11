@@ -1,0 +1,33 @@
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+h1{
+    text-align: center;
+}
+img{
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+}
+.testimonial{
+    padding: 0.8rem;
+    flex:1 2 auto;
+    height: 16rem;
+    width: 16rem;
+    display: flex;
+    gap: 0.3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #ee7600 solid 1px;
+    border-radius: 1rem;
+    color: black;
+    box-shadow: -10px 10px 10px #ee7600;
+}
