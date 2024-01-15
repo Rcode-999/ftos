@@ -39,16 +39,22 @@ ul li{
 ul a{
     color: #ee7600;
     text-decoration: none;
-    opacity: 0.8;
+    opacity: 0.7;
+    border-radius: 3rem;
+    border: 1px solid black;
+    padding: 1rem;
+    
 }
 
 ul a:hover{
     opacity: 1;
-    border-radius: 0.1rem;
-    box-shadow: 2px 2px 2px  #ee7600;
+    box-shadow: 2px 2px 2px 1px black;
 }
 
-
+.cart-quantity{
+    color: red;
+    font-size: 1.1rem;
+}
 
 
 

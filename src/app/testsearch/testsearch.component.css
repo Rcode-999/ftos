@@ -1,0 +1,16 @@
+
+img{
+    height: 13rem;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #ee7600;
+}
+
+h1{
+    font-size: 1.3rem;
+}

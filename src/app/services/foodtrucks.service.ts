@@ -23,7 +23,9 @@ export class FoodtrucksService {
     return this.getProducts().filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()));
   }
 
-
+  getAllProductsByName(foodTruck:string):Product[]{
+    return this.getProducts().filter(prd => prd.foodTruckTitle == foodTruck)
+  }
   getAllTags():Tag[]{
     return sample_tags;
   }

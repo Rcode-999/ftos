@@ -54,7 +54,7 @@ ul{
 .foodtruck{
     padding: 1rem;
     margin: 1rem;
-    border: #ee7600 solid 1px;
+    border: black solid 1px;
     border-radius: 1rem;
     height: 300px;
     width: 300px;
@@ -88,3 +88,6 @@ ul{
     cursor: pointer;
     opacity: 1;
 }
+
+/*Carousel css*/
+

@@ -21,7 +21,6 @@ export class SearchComponent {
   search(term:string):void{
     if(term){
       this.router.navigateByUrl('/foodtrucks/search/' + term);
-      this.foodService.isSearched = true;
     }
   }
 }

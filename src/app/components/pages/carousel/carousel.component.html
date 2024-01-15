@@ -3,9 +3,9 @@
 <app-tags></app-tags>
 
 <div  class="carousel-container">
-    <ul>
+    <ul class="outer">
         <li *ngFor="let foodTruck of foodTrucks; let i = index" 
-        [ngClass]="{'image-active': selectedIndex === i}"
+        [ngClass]="{'active': selectedIndex === i}"
         class="fade"
         >
             <h1>{{foodTruck.title}}</h1>
@@ -13,7 +13,10 @@
 [visible]="!foodTrucks || !foodTrucks.length"
 resetLinkText="Reset Search"
 ></app-not-found>
-            <app-foodtruck [foodTruckTitle]="foodTruck.title"></app-foodtruck>
+
+            <div class="container">
+                <app-foodtruck [foodTruckTitle]="foodTruck.title" [Products]="setProducts(foodTruck.title)"></app-foodtruck>
+            </div>
         </li>
     </ul>
 

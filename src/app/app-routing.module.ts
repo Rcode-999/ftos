@@ -5,6 +5,8 @@ import { FoodtruckComponent } from './components/partials/foodtruck/foodtruck.co
 import { CarouselComponent } from './components/pages/carousel/carousel.component';
 import { ProductPageComponent } from './components/pages/product-page/product-page.component';
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
+import { AccountPageComponent } from './components/pages/account-page/account-page.component';
+import { HeaderComponent } from './components/partials/header/header.component';
 
 const routes: Routes = [
   {path:'',component:HomepageComponent},
@@ -12,7 +14,8 @@ const routes: Routes = [
   {path:'foodtrucks/search/:searchTerm',component:CarouselComponent},
   {path:'foodtrucks/tag/:tag',component:CarouselComponent},
   {path:'foodtrucks/food/:id',component:ProductPageComponent},
-  {path:'cart',component:CartPageComponent}
+  {path:'cart',component:CartPageComponent},
+  {path:'accounts',component:AccountPageComponent}
 ];
 
 @NgModule({

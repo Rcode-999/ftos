@@ -26,7 +26,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: #ee7600 solid 1px;
+    border: black solid 1px;
     border-radius: 1rem;
     color: black;
     box-shadow: -10px 10px 10px #ee7600;

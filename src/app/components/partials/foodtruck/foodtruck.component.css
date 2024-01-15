@@ -19,11 +19,6 @@ li{
     position: relative;
 }
 
-button:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-
 img{
     height: 9rem;
     width: 100%;
