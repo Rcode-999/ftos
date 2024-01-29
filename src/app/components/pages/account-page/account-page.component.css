@@ -5,7 +5,6 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #f4f1f1;
 }
 .pi-user{
     margin-top: 0;
