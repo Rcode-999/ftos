@@ -5,12 +5,13 @@
     </div>
     <nav class="header-nav">
       <ul>
-        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/home">Home</a></li>
         <li><a routerLink="/foodtrucks">Food Trucks</a></li>
         <li><a routerLink="/accounts">Account</a></li>
         <li><a routerLink="/about">About</a></li>
         <li><a routerLink="/contact">Contact</a></li>
         <li><a routerLink="/cart"><i class='bx bx-shopping-bag'><span *ngIf="cartQuantity" class="cart-quantity">({{cartQuantity}})</span></i></a></li>
+        <li><button class="signout" (click)="logOut()">Sign Out</button></li>
       </ul>
     </nav>
   </header>

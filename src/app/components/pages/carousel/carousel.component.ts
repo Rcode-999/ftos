@@ -26,6 +26,7 @@ export class CarouselComponent implements OnInit, OnChanges{
   isTagged:boolean = false;
   searchTerm!:string;
   tag!:string;
+  
   constructor(private foodTruckService: FoodtrucksService, private dataService:DataserviceService, private activatedRoute:ActivatedRoute){
     activatedRoute.params.subscribe((params) => {
       

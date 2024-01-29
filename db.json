@@ -1,0 +1,302 @@
+{
+  "users": [
+    {
+      "id": "4657",
+      "fullName": "test",
+      "email": "test@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "8194",
+      "fullName": "testuser",
+      "email": "test2@gmail.com",
+      "password": "2468"
+    }
+  ],
+  "usersHistory": [
+    {
+      "id": "a1e3",
+      "date": "2024-01-22T08:33:12.815Z",
+      "email": "test2@gmail.com",
+      "products": [
+        {
+          "id": 6,
+          "name": "Hamburger",
+          "price": 30,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Recommended",
+            "Fastfood",
+            "Burger"
+          ]
+        },
+        {
+          "id": 21,
+          "name": "Kebabs",
+          "price": 35,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Pastry",
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Grilled cheese sandwich",
+          "price": 30,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Sanwich",
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 26,
+          "name": "Corn dogs",
+          "price": 20,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 16,
+          "name": "Funnel cakes",
+          "price": 20,
+          "foodTruckTitle": "WaffelBak",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Pastry"
+          ]
+        },
+        {
+          "id": 14,
+          "name": "Sushi",
+          "price": 50,
+          "foodTruckTitle": "Chubby's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Fish"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "47c4",
+      "date": "2024-01-26T11:03:48.967Z",
+      "email": "test2@gmail.com",
+      "products": [
+        {
+          "id": 6,
+          "name": "Hamburger",
+          "price": 30,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Recommended",
+            "Fastfood",
+            "Burger"
+          ]
+        },
+        {
+          "id": 21,
+          "name": "Kebabs",
+          "price": 35,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Pastry",
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Grilled cheese sandwich",
+          "price": 30,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Sanwich",
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 26,
+          "name": "Corn dogs",
+          "price": 20,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 16,
+          "name": "Funnel cakes",
+          "price": 20,
+          "foodTruckTitle": "WaffelBak",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Pastry"
+          ]
+        },
+        {
+          "id": 14,
+          "name": "Sushi",
+          "price": 50,
+          "foodTruckTitle": "Chubby's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Fish"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1c34",
+      "date": "2024-01-26T11:03:55.126Z",
+      "email": "test2@gmail.com",
+      "products": [
+        {
+          "id": 6,
+          "name": "Hamburger",
+          "price": 30,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Recommended",
+            "Fastfood",
+            "Burger"
+          ]
+        },
+        {
+          "id": 21,
+          "name": "Kebabs",
+          "price": 35,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Pastry",
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Grilled cheese sandwich",
+          "price": 30,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Sanwich",
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 26,
+          "name": "Corn dogs",
+          "price": 20,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 16,
+          "name": "Funnel cakes",
+          "price": 20,
+          "foodTruckTitle": "WaffelBak",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Pastry"
+          ]
+        },
+        {
+          "id": 14,
+          "name": "Sushi",
+          "price": 50,
+          "foodTruckTitle": "Chubby's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Fish"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ebc8",
+      "date": "2024-01-26T11:03:59.520Z",
+      "email": "test2@gmail.com",
+      "products": [
+        {
+          "id": 6,
+          "name": "Hamburger",
+          "price": 30,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Recommended",
+            "Fastfood",
+            "Burger"
+          ]
+        },
+        {
+          "id": 21,
+          "name": "Kebabs",
+          "price": 35,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Pastry",
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Grilled cheese sandwich",
+          "price": 30,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Sanwich",
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 26,
+          "name": "Corn dogs",
+          "price": 20,
+          "foodTruckTitle": "Duke's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Fastfood"
+          ]
+        },
+        {
+          "id": 16,
+          "name": "Funnel cakes",
+          "price": 20,
+          "foodTruckTitle": "WaffelBak",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Pastry"
+          ]
+        },
+        {
+          "id": 14,
+          "name": "Sushi",
+          "price": 50,
+          "foodTruckTitle": "Chubby's",
+          "imageUrl": "assets/cb.jpg",
+          "tag": [
+            "Fish"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,31 +1,20 @@
-
-<html>
-<head>
-	<title>Slide Navbar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
-</head>
 <body>
-	<div class="main">  	
-		<input type="checkbox" id="chk" aria-hidden="true">
-
-			<div class="signup">
-				<form>
-					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" [(ngModel)]="signupObj.userName">
-					<input type="email" name="email" placeholder="Email" [(ngModel)]="signupObj.email">
-					<input type="password" name="pswd" placeholder="Password" [(ngModel)]="signupObj.password">
-					<button (click)="onSignUp()">Sign up</button>
-				</form>
-			</div>
-
-			<div class="login">
-				<form>
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" [(ngModel)]="signupObj.userName">
-					<input type="password" name="pswd" placeholder="Password" [(ngModel)]="signupObj.password">
-					<button (click)="onLogin()">Login</button>
-				</form>
-			</div>
-	</div>
+    <div class="accountheader">
+        <h2>FTOS Account</h2>
+        <button>Sign out</button>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="side-panel">
+            <i class="pi pi-user" style="font-size: 9rem"></i>
+            <button><h1>My Account</h1></button>
+            <button class="side-btn" (click)="loadContent('orderHistory')"><h3>Order History</h3></button>
+            <button class="side-btn" (click)="loadContent('password')"><h3>Password</h3></button>
+            <button class="side-btn"><h3>Billings and Payments</h3></button>
+        </div>
+        <div class="main-panel">
+            <app-order-history *ngIf="selectedContent === 'orderHistory'"></app-order-history>
+            <app-password *ngIf="selectedContent === 'password'"></app-password>
+        </div>
+    </div>
 </body>
-</html>

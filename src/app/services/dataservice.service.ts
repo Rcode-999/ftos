@@ -8,4 +8,6 @@ export class DataserviceService {
   constructor() { }
 
   sharedData!: string;
+
+  login:Boolean = false;
 }

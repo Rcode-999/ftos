@@ -43,12 +43,27 @@ ul a{
     border-radius: 3rem;
     border: 1px solid black;
     padding: 1rem;
-    
+    background: transparent;
+}
+.signout{
+    color: #ee7600;
+    text-decoration: none;
+    opacity: 0.7;
+    border-radius: 3rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background: transparent;
+    cursor: pointer;
 }
 
 ul a:hover{
     opacity: 1;
-    box-shadow: 2px 2px 2px 1px black;
+    box-shadow: 2px 2px 2px 1px #b3afaf;
+}
+
+.signout:hover{
+    opacity: 1;
+    box-shadow: 2px 2px 2px 1px #b3afaf;
 }
 
 .cart-quantity{

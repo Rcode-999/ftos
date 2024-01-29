@@ -1,5 +1,12 @@
-import { CanActivateChildFn } from '@angular/router';
+import { inject } from '@angular/core';
+import { CanActivateChildFn, Router } from '@angular/router';
 
 export const authGuard: CanActivateChildFn = (childRoute, state) => {
-  return true;
+  if(sessionStorage.getItem('email')){
+    return true;
+  }
+  else{
+    const router = inject(Router);
+    return router.navigate(['login']);
+  }
 };

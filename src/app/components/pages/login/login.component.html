@@ -1,0 +1,44 @@
+<body>
+<div class="container">
+    <div class="sub1">
+        <div class="sub1-header">
+            <h2>FTOS</h2>
+            <h4>Welcome Back</h4>
+          </div>
+        <form [formGroup]="loginForm" (ngSubmit)="loginUser()" >
+            <h3>Log In</h3>
+            <h4>Welcome back!Please enter your details</h4>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="text" 
+                pInputText formControlName="email" 
+                name="email" 
+                placeholder="Email address"/>
+                <small *ngIf="email.invalid && (email.dirty || email.touched)">
+                    <div *ngIf="email.errors?.['required']">Email is required</div>
+                    <div *ngIf="email.errors?.['email']">Email should be valid</div>
+                </small>
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" 
+                pInputText formControlName="password" 
+                name="password" 
+                placeholder="Type your password"/>
+                <small *ngIf="password.invalid && (password.dirty || password.touched)" >
+                    <div *ngIf="password.errors?.['required']">Password is required</div>
+                </small>
+            </div>
+            <button
+            [disabled]="loginForm.invalid"
+            type="submit">Sign In</button>
+            <div class="regmem">
+                Not a member? <a routerLink="/register">Register</a>
+            </div>
+        </form>
+</div>
+<div class="sub2">
+ <img src="assets/fire.jpg" alt="">
+</div>
+</div>
+</body>

@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{    
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#fff,#cc6600,#ff6e00);
+}
+.containersub1{
+    transform: translateX(50%);
+}
+.about-us{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+}
+.circle{
+    background: #ee7600;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.wwd-h1{
+    padding: 1rem;
+    color: #141312;
+}
+
+p{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #4f4d3f;
+}
+
+.textcontainer{
+    background: #fff;
+    height: 27rem;
+    width: 27rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 3px #beb4b4;
+    transform: translate(-50%,-20%);
+}
+
+.containersub2{
+
+}
